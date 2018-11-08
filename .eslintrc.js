@@ -5,15 +5,17 @@ module.exports = {
     node: true
   },
 
+  extends: ["plugin:vue/recommended", "@vue/prettier"],
+
   rules: {
-    "no-console": "off",
-    "no-debugger": "off",
-    "vue/max-attributes-per-line": "off"
+    'no-console': 'off',
+    'no-debugger': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/html-closing-bracket-newline': 'off',
+    'vue/html-closing-bracket-spacing': 'off'
   },
 
   parserOptions: {
-    parser: "babel-eslint"
-  },
-
-  extends: ["plugin:vue/recommended", "@vue/prettier"]
+    parser: 'babel-eslint'
+  }
 };
